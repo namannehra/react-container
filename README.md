@@ -271,9 +271,9 @@ const [CounterProvider, useCounter] = createContainer(useCounterContainer);
 
 https://github.com/jamiebuilds/unstated-next
 
-The idea for this project came from unstated-next. The only big difference `react-container` and
-`unstated-next` is the value passed to provider. In `unstated-next` only initial state can be passed
-to provider. In `react-container` any value can be passed.
+The idea for this project came from unstated-next. The only big difference between `react-container`
+and `unstated-next` is the value passed to the provider. In `unstated-next` only initial state can
+be passed to the provider. In `react-container` any value can be passed to the provider.
 
 #### `unstated-next`
 
