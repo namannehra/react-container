@@ -5,6 +5,7 @@
         "forceConsistentCasingInFileNames": true,
         "importHelpers": true,
         "jsx": "react",
+        "module": "CommonJS",
         "moduleResolution": "Node",
         "noEmitOnError": true,
         "noFallthroughCasesInSwitch": true,

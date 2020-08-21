@@ -6,7 +6,6 @@
         "declarationMap": true,
         "incremental": true,
         "lib": ["ES2015"],
-        "module": "UMD",
         "newLine": "lf",
         "outDir": "../build",
         "target": "ES2015"
