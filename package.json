@@ -1,14 +1,9 @@
 {
     "name": "@namannehra/react-container",
+    "description": "Simple React state management using context and hooks",
     "version": "1.0.0",
     "license": "MIT",
     "repository": "github:namannehra/react-container",
-    "keywords": [
-        "react",
-        "state",
-        "hooks",
-        "container"
-    ],
     "main": "build/react-container.js",
     "types": "build/react-container.d.ts",
     "scripts": {
