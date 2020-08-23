@@ -10,6 +10,7 @@
         "check-formatting": "prettier --check --ignore-path .gitignore .",
         "build": "del build && tsc --build src",
         "format": "prettier --ignore-path .gitignore --write .",
+        "prepublishOnly": "yarn format && yarn build && yarn test",
         "test": "jest"
     },
     "files": [
