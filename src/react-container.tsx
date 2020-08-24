@@ -1,5 +1,9 @@
 import React, { ComponentType, createContext, memo, ReactNode, useContext } from 'react';
 
+export interface ProviderNoValueProps {
+    children: ReactNode;
+}
+
 export interface ProviderOptionalValueProps<Value> {
     children: ReactNode;
     value?: Value;
@@ -27,6 +31,10 @@ export class NoProviderError<Props> extends Error {
         this.provider = provider;
     }
 }
+
+export function createContainer<Result>(
+    useCreateContainer: () => Result,
+): [ComponentType<ProviderNoValueProps>, () => Result];
 
 export function createContainer<Value, Result>(
     useCreateContainer: (value?: Value) => Result,
