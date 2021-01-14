@@ -1,3 +1,9 @@
+## 2.0.1
+
+### Removed
+
+-   `engines` in `package.json`
+
 ## 2.0.0
 
 2021-01-14
