@@ -2,9 +2,12 @@ import { describe, expect, test } from '@jest/globals';
 import { act, renderHook } from '@testing-library/react-hooks';
 import { ReactNode } from 'react';
 
-import { NoProviderError } from '../src/react-container';
-
-import { CounterProvider, counterProviderName, useCounter } from './counter-container';
+import {
+    CounterProvider,
+    counterProviderName,
+    NoProviderError,
+    useCounter,
+} from './counter-container';
 
 describe('NoProviderError', () => {
     const renderUseCounter = () => renderHook(() => useCounter()).result;
@@ -14,14 +17,9 @@ describe('NoProviderError', () => {
         expect(result.error).toBeInstanceOf(NoProviderError);
     });
 
-    test('NoProviderError has correct provider', () => {
-        const result = renderUseCounter();
-        expect((result.error as NoProviderError<unknown>).provider).toStrictEqual(CounterProvider);
-    });
-
     test('NoProviderError includes provider name in message', () => {
         const result = renderUseCounter();
-        expect((result.error as NoProviderError<unknown>).message).toMatch(counterProviderName);
+        expect(result.error!.message).toMatch(counterProviderName);
     });
 });
 

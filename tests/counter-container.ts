@@ -12,9 +12,7 @@ const useCounterContainer = (initialCount?: number) => {
     return { count, increment };
 };
 
-const [CounterProvider, useCounter] = createContainer(useCounterContainer);
+export const [CounterProvider, useCounter, NoProviderError] = createContainer(useCounterContainer);
 
 export const counterProviderName = 'CounterProvider';
 CounterProvider.displayName = counterProviderName;
-
-export { CounterProvider, useCounter };
