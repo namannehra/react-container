@@ -1,9 +1,5 @@
 {
-    "extends": "../common-tsconfig.json",
-    "compilerOptions": {
-        "lib": ["ES2019"],
-        "target": "ES2019"
-    },
+    "extends": "../tsconfig.base.json",
     "references": [
         {
             "path": "../src"

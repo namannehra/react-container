@@ -1,8 +1,8 @@
-import React, { ComponentType, createContext, memo, ReactNode, useContext } from 'react';
+import { ComponentType, createContext, memo, ReactNode, useContext } from 'react';
 
 export interface ProviderOptionalValueProps<Value> {
     children: ReactNode;
-    value?: Value;
+    value?: Value | undefined;
 }
 
 export interface ProviderRequiredValueProps<Value> {
