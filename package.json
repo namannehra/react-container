@@ -1,28 +1,33 @@
 {
     "name": "@namannehra/react-container",
-    "version": "2.0.1",
+    "version": "3.0.0",
     "description": "Simple React state management using context and hooks",
     "license": "MIT",
     "repository": "github:namannehra/react-container",
     "type": "module",
+    "main": "build/react-container.js",
+    "types": "build/react-container.d.ts",
     "packageManager": "yarn@3.5.1",
     "files": [
         "/build/**/!(*.tsbuildinfo)"
     ],
-    "main": "build/react-container.js",
-    "types": "build/react-container.d.ts",
     "scripts": {
         "check-formatting": "prettier --check .",
         "build": "del build && tsc --build src",
         "format": "prettier --write .",
-        "prepublishOnly": "yarn format && yarn build && yarn test",
         "test": "jest"
     },
     "dependencies": {
         "tslib": "^2.5.2"
     },
     "peerDependencies": {
+        "@types/react": "^16.14.0 || ^17.0.0 || ^18.0.0",
         "react": "^16.14.0 || ^17.0.0 || ^18.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@types/react": {
+            "optional": true
+        }
     },
     "devDependencies": {
         "@jest/globals": "^29.5.0",

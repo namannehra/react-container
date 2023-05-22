@@ -1,3 +1,13 @@
+## 3.0.0
+
+### Changed
+
+-   `createContainer` returns `[Provider, useContainer, NoProviderError]`
+
+### Removed
+
+-   `NoProviderError`
+
 ## 2.0.1
 
 ### Removed
@@ -5,8 +15,6 @@
 -   `engines` in `package.json`
 
 ## 2.0.0
-
-2021-01-14
 
 ### Added
 
@@ -16,12 +24,10 @@
 
 ### Removed
 
--   `ProviderNoValueProps`
+-   Type `ProviderNoValueProps`
 
 ## 1.0.1
 
-2020-08-24
-
 ### Added
 
--   `ProviderNoValueProps`
+-   Type `ProviderNoValueProps`
