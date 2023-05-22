@@ -1,6 +1,6 @@
 {
     "name": "@namannehra/react-container",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "Simple React state management using context and hooks",
     "license": "MIT",
     "repository": "github:namannehra/react-container",
